@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../assets/Бишкек.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    position: relative;
+  }
+  
+  .building {
+    position: absolute;
+    bottom: 0;
+    width: 200px; /* Adjust the width of the building */
+    height: 600px; /* Adjust the height of the building */
+    border: 2px solid black;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+  }
+  
+  .floor {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Increase font size to fit larger building */
+  }
+  
+  .elevator {
+    position: absolute;
+    bottom: 0;
+    width: 120px; /* Adjust the width of the elevator */
+    height: 20%;
+    background-image: url('../assets/БайХан.png');
+    background-size: cover;
+    
+    transition: bottom 2s ease-in-out;
+  }
+  
+  .buttons-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
